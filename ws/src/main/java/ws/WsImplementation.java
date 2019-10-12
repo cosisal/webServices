@@ -14,7 +14,7 @@ public class WsImplementation {
 		
 		System.out.println("Hello");
 		
-		return "Hello";
+		return "Ciao";
 	}
 	
 	public String diQualcosa(String cosaDico) {
