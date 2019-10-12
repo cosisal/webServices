@@ -27,7 +27,7 @@ public class TestReturnFinally {
 		case 33:
 			amount = amount * 2;
 		case 73:
-			amouònt = amount * 2;
+			amount = amount * 2;
 		case 63:
 			amount = amount + amount;
 		

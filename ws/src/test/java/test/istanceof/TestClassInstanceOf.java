@@ -24,7 +24,7 @@ public class TestClassInstanceOf {
 			System.out.println("f is a Flyer");
 		if (e instanceof Bird)
 			System.out.println("e is a Bird");
-		if (b instanceof Bird)
-			System.out.println("f is a Bird");
+//		if (b instanceof Bird)
+//			System.out.println("f is a Bird");
 	}
 }

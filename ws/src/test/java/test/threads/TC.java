@@ -2,7 +2,7 @@ package test.threads;
 
 import java.util.HashMap;
 
-protected class TC {
+class TC {
 
 	public TC() {
 		super();
