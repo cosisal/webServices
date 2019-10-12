@@ -129,19 +129,47 @@
 	
 	<distributionManagement>
 		<snapshotRepository>
-			<id>dapp-snapshots</id>
+			<name>NexusRepositorySnapshot</name>
+			<id>nexus-snapshot-repository</id>
 			<url>http://localhost:8081/repository/maven-snapshots/</url>
-			
-<!-- 			<username>salvatore.cosi</username> -->
-<!--       		<password>cosi224933</password>  -->
 		</snapshotRepository>
 		<repository>
-			<id>dapp-releases</id>
+			<name>NexusRepositoryReleases</name>
+			<id>nexus-releases-repository</id>
 			<url>http://localhost:8081/repository/maven-releases/</url>
-<!-- 			<username>salvatore.cosi</username> -->
-<!--       		<password>cosi224933</password>  -->
 		</repository>
 	</distributionManagement>
+	<repositories>
+		<repository>
+			<snapshots>
+				<enabled>false</enabled>
+			</snapshots>
+			<id>central</id>
+			<name>Central Repository</name>
+			<url>http://repo.maven.apache.org/maven2</url>
+		</repository>
+		<repository>
+			<snapshots>
+				<enabled>true</enabled>
+				<checksumPolicy>fail</checksumPolicy>
+			</snapshots>
+			<id>LocalNexusRepository</id>
+			<url>http://localhost:8081/nexus/content/repository/</url>
+		</repository>
+	</repositories>
+	<pluginRepositories>
+		<pluginRepository>
+			<releases>
+				<updatePolicy>never</updatePolicy>
+			</releases>
+			<snapshots>
+				<enabled>false</enabled>
+			</snapshots>
+			<id>central</id>
+			<name>Central Repository</name>
+			<url>http://repo.maven.apache.org/maven2</url>
+		</pluginRepository>
+	</pluginRepositories>
 
 	<scm>
 		<connection>scm:git:https://github.com/cosisal/webServices.git</connection>
